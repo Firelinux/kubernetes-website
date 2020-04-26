@@ -19,18 +19,19 @@ Para mais informações sobre como contribuir com a documentação do Kubernetes
 * [Guia de Estilo da Documentação](http://kubernetes.io/docs/contribute/style/style-guide/)
 * [Localizando documentação do Kubernetes](https://kubernetes.io/docs/contribute/localization/)
 
-Você pode contactar os mantenedores da localização em Português em:
+## Tradutores `README.md`'s
 
 * Felipe ([GitHub - @femrtnz](https://github.com/femrtnz))
+* Jeann ([GitHub - @firelinux](https://github.com/firelinux))
 * [Slack channel](https://kubernetes.slack.com/messages/kubernetes-docs-pt)
 
-## Executando o site localmente usando o Docker
+## Executando o website localmente usando o Docker
 
-A maneira recomendada de executar o site do Kubernetes localmente é executar uma imagem especializada do [Docker](https://docker.com) que inclui o gerador de site estático [Hugo](https://gohugo.io).
+A maneira recomendada de executar o website localmente do Kubernetes é executar uma imagem especializada do [Docker](https://docker.com) que inclui o gerador de site estático [Hugo](https://gohugo.io).
 
-> Se você está rodando no Windows, você precisará de mais algumas ferramentas que você pode instalar com o [Chocolatey](https://chocolatey.org). `choco install make`
+> Se você estiver rodando no Windows, precisará de mais algumas ferramentas que você pode instalar com o [Chocolatey](https://chocolatey.org). `choco install make`
 
-> Se você preferir executar o site localmente sem o Docker, consulte [Executando o site localmente usando o Hugo](#executando-o-site-localmente-usando-o-hugo) abaixo.
+> Se você preferir executar o site localmente sem o Docker, consulte [Executando o website localmente usando o Hugo](#executando-o-website-localmente-usando-o-hugo) abaixo.
 
 Se você tiver o Docker [em funcionamento](https://www.docker.com/get-started), crie a imagem do Docker do `kubernetes-hugo` localmente:
 
@@ -44,28 +45,28 @@ Depois que a imagem foi criada, você pode executar o site localmente:
 make docker-serve
 ```
 
-Abra seu navegador para http://localhost:1313 para visualizar o site. Conforme você faz alterações nos arquivos de origem, Hugo atualiza o site e força a atualização do navegador.
+Abra seu navegador em http://localhost:1313 para visualizar o site. Conforme você faz alterações nos arquivos de origem, Hugo atualiza o website e força a atualização do navegador.
 
-## Executando o site localmente usando o Hugo
+## Executando o website localmente usando o Hugo
 
 Veja a [documentação oficial do Hugo](https://gohugo.io/getting-started/installing/) para instruções de instalação do Hugo. Certifique-se de instalar a versão do Hugo especificada pela variável de ambiente `HUGO_VERSION` no arquivo [`netlify.toml`](netlify.toml#L9).
 
-Para executar o site localmente quando você tiver o Hugo instalado:
+Para executar o website localmente quando você tiver o Hugo instalado:
 
 ```bash
 make serve
 ```
 
-Isso iniciará o servidor Hugo local na porta 1313. Abra o navegador para http://localhost:1313 para visualizar o site. Conforme você faz alterações nos arquivos de origem, Hugo atualiza o site e força a atualização do navegador.
+Isso iniciará o servidor Hugo local na porta 1313. Abra o navegador em http://localhost:1313 para visualizar o website. Conforme você faz alterações nos arquivos de origem, Hugo atualiza o website e força a atualização do navegador.
 
-## Comunidade, discussão, contribuição e apoio
+## Comunidade, discussão, contribuição e suporte
 
 Aprenda a se envolver com a comunidade do Kubernetes na [página da comunidade](http://kubernetes.io/community/).
 
 Você pode falar com os mantenedores deste projeto:
 
 - [Slack](https://kubernetes.slack.com/messages/sig-docs)
-- [Mailing List](https://groups.google.com/forum/#!forum/kubernetes-sig-docs)
+- [Lista de e-mail](https://groups.google.com/forum/#!forum/kubernetes-sig-docs)
 
 ### Código de conduta
 
